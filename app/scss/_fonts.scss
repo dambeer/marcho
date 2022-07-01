@@ -1,6 +1,6 @@
 @font-face{
     // Название
-    font-family: 'Quicksand-Regular', sans-serif; 
+    font-family: 'Quicksand-Regular'; 
     // Делаем его medium, если надо - меняем на 300,400,700 и тд.
     font-weight: 400;
     // Задаем стиль: normal,italik и тд. 
@@ -15,7 +15,7 @@
 }
 
 @font-face{
-    font-family: 'Quicksand-Medium', sans-serif; 
+    font-family: 'Quicksand-Medium'; 
     font-weight: 500;
     font-style: normal;
     src: local('Quicksand-Medium'),
@@ -25,7 +25,7 @@
 }
 
 @font-face{
-    font-family: 'Roboto-Regular', sans-serif; 
+    font-family: 'Roboto-Regular'; 
     font-weight: 400;
     font-style: normal;
     src: local('Roboto-Regular'),
@@ -35,7 +35,7 @@
 }
 
 @font-face{
-    font-family: 'Roboto-Medium', sans-serif; 
+    font-family: 'Roboto-Medium'; 
     font-weight: 500;
     font-style: normal;
     src: local('Roboto-Medium'),
@@ -45,7 +45,7 @@
 }
 
 @font-face{
-    font-family: 'Roboto-Bold', sans-serif; 
+    font-family: 'Roboto-Bold'; 
     font-weight: 700;
     font-style: normal;
     src: local('Roboto-Bold'),
