@@ -44,3 +44,10 @@
     max-width: 570px;
     margin: 0 auto 55px;
 }
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
