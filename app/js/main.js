@@ -1,5 +1,13 @@
 $(function () {
 
+    $('.menu__btn').on('click', function(){
+        $('.menu__list').toggleClass('menu__list--active');
+    })
+
+    $('.shop__filter-btn').on('click', function(){
+        $('.shop__filters').slideToggle();
+    })
+    
 
     $('.blog-page__slider').slick({
         prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="9px" height="14px" viewBox="0 0 9 14" version="1.1"><g><path d="M 6.75 12.25 C 6.460938 12.25 6.175781 12.164062 5.953125 11.992188 L 0.328125 7.617188 C -0.109375 7.277344 -0.109375 6.722656 0.328125 6.382812 L 5.953125 2.007812 C 6.394531 1.664062 7.105469 1.664062 7.546875 2.007812 C 7.984375 2.347656 7.984375 2.902344 7.546875 3.242188 L 2.714844 7 L 7.546875 10.757812 C 7.984375 11.097656 7.984375 11.652344 7.546875 11.996094 C 7.328125 12.164062 7.039062 12.25 6.75 12.25 Z M 6.75 12.25 "/></g></svg></button>',
@@ -28,7 +36,15 @@ $(function () {
     $('.product-slide__big').slick({
         draggable: false,
         arrows: false,
-        fade: true
+        fade: true,
+        responsive: [
+            {
+                breakpoint: 1051,
+                settings: {
+                    draggable: true,
+                }
+            }
+        ]
     });
 
 
@@ -39,10 +55,12 @@ $(function () {
 
     $('.button-list').on('click', function () {
         $('.product-item').addClass('product-item--list')
+        $('.shop-content__inner').addClass('shop-content__nogrid')
     });
 
     $('.button-grid').on('click', function () {
         $('.product-item').removeClass('product-item--list')
+        $('.shop-content__inner').removeClass('shop-content__nogrid')
     });
 
 
